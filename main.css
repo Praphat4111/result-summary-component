@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+    font-family: 'Hanken Grotesk', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    width: 700px;
+    height: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    border-radius: 30px;
+
+}
+
+.left-card {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 30px;
+    width: 300px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: hsl(241, 100%, 89%);
+    /* padding: 5px; */
+}
+
+.left-card h3 {
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 100%;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    width: 175px;
+    height: 175px;
+    margin-bottom: 20px;
+}
+
+.left-card h1 {
+    color: white !important
+}
+
+.explain {
+    width: 250px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.total-score {
+    font-size: 52px;
+    font-weight: 700;
+    color: white;
+
+}
+
+.description {
+    flex-grow: 5;
+    text-align: center;
+}
+
+.left-card h1 {
+    margin-bottom: 20px;
+}
+
+
+.right-card {
+    width: 300px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 50px;
+    font-weight: 600;
+}
+
+.icon {
+    margin-right: 3px;
+}
+
+.reaction {
+    width: 250px;
+    height: 40px;
+    background-color: #fff6f5;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.reaction-left {
+    color: hsl(0, 100%, 67%);
+    display: flex;
+    align-items: center;
+}
+
+.memory {
+    width: 250px;
+    height: 40px;
+    background-color: #fffbf2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.memory-left {
+    display: flex;
+    align-items: center;
+    color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+    width: 250px;
+    height: 40px;
+    background-color: #f2fafa;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.verbal-left {
+    display: flex;
+    align-items: center;
+    color: hsl(166, 100%, 37%);
+}
+
+.visual {
+    width: 250px;
+    height: 40px;
+    background-color: #f3f3fd;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.visual-left {
+    display: flex;
+    align-items: center;
+    color: hsl(234, 85%, 45%);
+}
+
+.right-card h3 {
+    color: #383c4f;
+}
+
+.score {
+    color: #383c4f;
+
+}
+
+.max-score {
+    color: #c9d3d5
+}
+
+.summary-box {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+button {
+    margin-top: 20px;
+    background-color: #303b5a;
+    color: white;
+    width: 250px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: none;
+    font-weight: 600;
+}
+
+
+
+@media only screen and (max-width: 375px) {
+    .container {
+        width: auto;
+        height: auto;
+    }
+
+    .card {
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        width: 100%;
+        border-radius: 0px 0px 30px 30px;
+    }
+
+    .left-card {
+        border-radius: 0px 0px 30px 30px;
+        width: auto;
+        padding: 50px;
+    }
+
+    .right-card {
+        width: auto;
+        padding: 50px;
+    }
+}
